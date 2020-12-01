@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+/* 
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif; 
+*/
+
+
+/* mobile first - Standard Styling */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media (min-width: 768px) { .container { max-width: 720px; } }
+@media (min-width: 1200px) { .container { max-width: 1140px; } }
+
+a {
+    color: #2baaec;
+    text-decoration: none;
+}
+a:hover {
+    color: #25e6c8;
+}
+
+.btn {
+    display: inline-flex;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1.25rem, 1.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+
+
+/* topmenu */
+#topmenu {
+    display: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+@media (min-width: 768px) { #topmenu { display: block; }}
+
+#topmenu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#topmenu .container .hours {
+    flex: 2;
+}
+
+#topmenu .container .hours i {
+    margin-right: 0.3rem;
+    color: #2baaec;
+    font-size: 1.2em;
+}
+
+#topmenu .container .socialmedia {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+}
+
+#topmenu .container .socialmedia li {
+    margin-left: 1.3rem;
+}
+
+
+
+
+
+/* mainmenu */
+#mainmenu {
+    font-family: 'Roboto Slab', serif; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+@media (min-width: 768px) { #mainmenu { padding-top: 2rem; padding-bottom: 2rem;} }
+
+
+#mainmenu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mainmenu .container .logo {
+    height: 50px;
+}
+@media (min-width: 768px) { #mainmenu .container .logo { height: 60px; } }
+
+
+#mainmenu .container .menu {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#mainmenu .container .menu ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+}
+@media (min-width: 768px) { #mainmenu .container .menu ul { display: flex; } }
+
+
+#mainmenu .container .menu ul li {
+    margin-left: 1.3rem;
+}
+
+#mainmenu .container .menu ul li a {
+    color: #363636;
+}
+#mainmenu .container .menu ul li a:hover {
+    color: #25e6c8;
+}
+
+
+#mainmenu .container .menu button {
+    font-size: 2.0rem;
+    padding: 0;
+}
+@media (min-width: 768px) { #mainmenu .container .menu button { display: none; } }
+
+
+
+
+/* showcase */
+#showcase {
+    background-color: #DEDEDE;
+    padding-top: 2.5rem;
+}
+#showcase .container {   
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 768px) { #showcase .container { display: flex; justify-content: space-between;} }
+
+#showcase .container .showcase-image {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#showcase .container .showcase-image .showimage{
+    height: 200px;
+}
+@media (min-width: 768px) { #showcase .container .showcase-image .showimage{ height: 400px; margin: 0;} }
+
+#showcase .container .showcase-info {
+   
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;  
+    text-align: center;
+}
+@media (min-width: 768px) {#showcase .container .showcase-info{padding-left: 2rem;} }
+
+#showcase .container .showcase-info h1 {
+    
+    font-family: 'Roboto Slab', serif; 
+    font-size: 32px;
+    font-weight: lighter;          
+    margin-top: 0rem;
+   
+}
+#showcase .container .showcase-info p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #626262;
+}
+#showcase .container .showcase-about-our-clinic {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+@media (min-width: 768px) {#showcase .container .showcase-about-our-clinic {display: block ;}}
+#showcase .container .showcase-btn {
+    height: 2rem;
+    width: 8rem;
+      
+    background-color: #25E6C8;
+    color: #ffffff;
+    border-radius: 8px;
+    border-width: 0;
+}
+@media (min-width: 768px) {#showcase .container .showcase-btn{margin-left: 0;}}
+
+#showcase .container .showcase-btn:hover {
+    background-color: #2BAAEC;
+    border-radius: 8px;
+    border-width: 0; 
+}
+
+
+
+
+/*about-us*/
+#about-us {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+#about-us .container {
+    align-items: center;
+    justify-content: center; 
+}
+@media (min-width: 768px) { #about-us .container { display: flex; justify-content: space-between;} }
+
+#about-us .container .about-us-info {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    justify-content:center;
+    justify-items: center;
+    padding-left: 1rem; 
+    text-align: center;
+}
+#about-us .container .about-us-info h2 {
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+#about-us .container .about-us-info hr .hr-info{  
+    width: 100%;
+}
+.hr-info {
+    background-color:#25E6C8;
+    width: 100%;
+}
+
+
+#about-us .container .about-us-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;   
+    
+    
+    
+}
+@media(min-width: 1199px) {.about-us-stats {justify-content: space-between; align-items: flex-start; padding-right: 10rem; }}
+
+#about-us .container .about-us-stats h3 {
+    font-family: 'Roboto Slab', serif; 
+    color: #2baaec;
+    font-size: 30px;
+    margin-bottom: 0rem;   
+}
+
+#about-us .container .about-us-stats p {
+    font-family: 'Roboto Slab', serif; 
+    margin-top: 0rem;
+    color: #363636;
+    font-size: 18px;
+    justify-content: flex-start;
+   
+}
+#about-us .container .about-us-image {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+#about-us .container .about-us-image .aboutimage{
+    height: 200px;
+}
+@media (min-width: 768px) { #about-us .container .about-us-image .aboutimage{ height: 500px; padding-top: 3rem;} }
+
+
+
+
+/* services */
+.service-box {
+    background: #ffffff;
+    justify-items:center; 
+    display: grid;  
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
+
+#services {
+    background: #f7f7f7;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+#services .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+#services .container { 
+    grid-template-columns:  1fr; 
+    grid-template-areas:    "ti"
+                            "b1"
+                            "b2"
+                            "b3"
+                            "b4"
+                            "b5"
+                            "b6";
+}
+@media (min-width: 768px) { 
+    #services .container { 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-areas:    "ti ti"
+                                "b1 b2" 
+                                "b3 b4"
+                                "b5 b6";
+    }
+}
+@media (min-width: 992px) { 
+    #services .container { 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-areas:    "ti ti ti"
+                                "b1 b2 b3"
+                                "b4 b5 b6";
+    }
+}
+
+#service-title {
+    grid-area: ti;   
+}
+#service-box-1 {
+    grid-area: b1;
+}
+#service-box-2 {
+    grid-area: b2;  
+}
+#service-box-3 {
+    grid-area: b3;
+}
+#service-box-4 {
+    grid-area: b4;
+}
+#service-box-5 {
+    grid-area: b5;
+}
+#service-box-6 {
+    grid-area: b6;
+}
+
+#services .container #service-title h4 {
+    font-family: Roboto Slab;
+    font-size: 32px;
+    font-weight: normal;    
+    margin-bottom: 1rem;
+}
+
+
+#services .container #service-title hr {
+    width: 70%;  
+}
+@media (min-width: 1199px) {#services .container #service-title hr {width: 33%;}}
+
+
+hr {  
+    justify-content: center;
+    align-items: center;
+    background-color: #25E6C8;  
+    padding: 0.1rem;
+    border: #25e6c8;
+    margin-bottom: 1.3rem;
+}
+
+
+#services .container .service-box h5 {
+    font-family: Roboto Slab;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 0rem;
+     
+}
+#services .container .service-box p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+}
+#services .container .service-box .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+    background-color: #25E6C8;
+    color: #FFFFFF;
+      
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+#services .container .service-box .box:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+    background-color: #2BAAEC;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #2ba8ec26;
+    box-shadow: 0 0 0 7px #2ba8ec26;
+   
+   
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+#services .container .service-box .box-image {
+    height: 40px;
+}
+
+
+
+
+
+/* appointment */
+#appointment {
+    
+    background-color: #2BAAEC;
+    opacity: 80%;
+}
+#appointment .container {  
+    line-height: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;   
+}
+@media (min-width: 768px) { #appointment .container { display: flex; justify-content: space-between;} }
+
+#appointment .container .book-info {
+    display: flex;
+    justify-content: center;   
+    color: #FFFFFF;
+    font-family: Roboto Slab;
+    margin-top: 0.5rem;
+    padding-top: 1rem; 
+}
+#appointment .container .btn-book {  
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem; 
+}
+#appointment .container .btn-book .book { 
+    background-color: #FFFFFF;
+    color: #2BAAEC;
+    font-family: Roboto;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-color: #FFFFFF;
+    border-width: thin;
+    border-radius: 8px; 
+}
+
+#appointment .container .btn-book .book:hover { 
+    background-color: #2BAAEC;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+
+
+
+
+/*footer */
+#footer {
+    padding-top: 0.5rem;
+    background-color: #FFFFFF;
+}
+@media (min-width:768px) {#footer {background-color: #2BAAEC;}}
+#footer .container {   
+    line-height: 1rem;
+    font-size: 12px;
+}
+#footer .container .hours {
+    color: #2baaec;
+    display: flex;
+    justify-content: center;
+}
+#footer .container .hours i {
+    color:#2baaec;
+    margin-right: 0.3rem; 
+}
+@media (min-width: 768px) { #footer .container .hours{ display: none; } }
+
+#footer .container .time {
+    color: #2baaec;
+    font-family: Roboto Slab;
+    display: flex;
+    justify-content: center;  
+}
+ul {
+    list-style: none;
+}
+#footer .container .socialmedia {
+    color: #2baaec;
+    display: flex;
+    justify-content:space-evenly;
+    margin-right: 2rem;    
+}
+@media (min-width: 768px) { #footer .container .socialmedia{ display: none; } }
+
+#footer .container .copy {
+    color: #2baaec;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    padding-bottom: 1rem;
+    font-size: 10px;
+    
+}
+@media (min-width:768px) {#footer .container .copy{color: #F3FBFF; opacity: 60%; } } 
+
+#footer .container .copy i {  
+    color: #2baaec;
+    margin-right: 0.2rem;
+    font-size: 7px;
+    margin-top: 0.3rem;  
+}
+@media (min-width:768px) {#footer .container .copy i{color: #F3FBFF; } }
+
+
+
+
+
+
