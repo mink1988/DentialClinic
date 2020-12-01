@@ -9,13 +9,11 @@
 * {
     box-sizing: border-box;
 }
-
 html, body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
 }
-
 .container {
     width: 100%;
     margin-left: auto;
@@ -33,7 +31,6 @@ a {
 a:hover {
     color: #25e6c8;
 }
-
 .btn {
     display: inline-flex;
     font-weight: 300;
@@ -62,17 +59,14 @@ a:hover {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-
 #topmenu .container .hours {
     flex: 2;
 }
-
 #topmenu .container .hours i {
     margin-right: 0.3rem;
     color: #2baaec;
     font-size: 1.2em;
 }
-
 #topmenu .container .socialmedia {
     flex: 1;
     display: flex;
@@ -80,7 +74,6 @@ a:hover {
     list-style: none;
     margin: 0;
 }
-
 #topmenu .container .socialmedia li {
     margin-left: 1.3rem;
 }
@@ -97,32 +90,27 @@ a:hover {
 }
 @media (min-width: 768px) { #mainmenu { padding-top: 2rem; padding-bottom: 2rem;} }
 
-
 #mainmenu .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 #mainmenu .container .logo {
     height: 50px;
 }
 @media (min-width: 768px) { #mainmenu .container .logo { height: 60px; } }
-
 
 #mainmenu .container .menu {
     flex: 2;
     display: flex;
     justify-content: flex-end;
 }
-
 #mainmenu .container .menu ul {
     display: none;
     list-style: none;
     margin: 0;
 }
 @media (min-width: 768px) { #mainmenu .container .menu ul { display: flex; } }
-
 
 #mainmenu .container .menu ul li {
     margin-left: 1.3rem;
@@ -134,13 +122,12 @@ a:hover {
 #mainmenu .container .menu ul li a:hover {
     color: #25e6c8;
 }
-
-
 #mainmenu .container .menu button {
     font-size: 2.0rem;
     padding: 0;
 }
 @media (min-width: 768px) { #mainmenu .container .menu button { display: none; } }
+
 
 
 
@@ -179,7 +166,7 @@ a:hover {
 #showcase .container .showcase-info h1 {
     
     font-family: 'Roboto Slab', serif; 
-    font-size: 32px;
+    font-size: 40px;
     font-weight: lighter;          
     margin-top: 0rem;
    
@@ -196,6 +183,7 @@ a:hover {
     display: flex;
 }
 @media (min-width: 768px) {#showcase .container .showcase-about-our-clinic {display: block ;}}
+
 #showcase .container .showcase-btn {
     height: 2rem;
     width: 8rem;
@@ -212,6 +200,7 @@ a:hover {
     border-radius: 8px;
     border-width: 0; 
 }
+
 
 
 
@@ -238,8 +227,10 @@ a:hover {
 #about-us .container .about-us-info h2 {
     justify-content: center;
     align-items: center;
+    font-weight: normal;
     font-size: 32px;
     margin-bottom: 1rem;
+    
 }
 #about-us .container .about-us-info hr .hr-info{  
     width: 100%;
@@ -248,15 +239,10 @@ a:hover {
     background-color:#25E6C8;
     width: 100%;
 }
-
-
 #about-us .container .about-us-stats {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;   
-    
-    
-    
+    align-items: flex-start;      
 }
 @media(min-width: 1199px) {.about-us-stats {justify-content: space-between; align-items: flex-start; padding-right: 10rem; }}
 
@@ -272,14 +258,12 @@ a:hover {
     margin-top: 0rem;
     color: #363636;
     font-size: 18px;
-    justify-content: flex-start;
-   
+    justify-content: flex-start;  
 }
 #about-us .container .about-us-image {
     justify-content: center;
     align-items: center;
-    display: flex;
-    
+    display: flex;  
 }
 #about-us .container .about-us-image .aboutimage{
     height: 200px;
@@ -297,16 +281,13 @@ a:hover {
     padding-bottom: 1rem;
     padding-top: 3rem;
     padding-left: 2rem;
-    padding-right: 2rem;
-    
+    padding-right: 2rem;   
 }
-
 #services {
     background: #f7f7f7;
     padding-top: 2rem;
     padding-bottom: 3rem;
 }
-
 #services .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -370,13 +351,10 @@ a:hover {
     font-weight: normal;    
     margin-bottom: 1rem;
 }
-
-
 #services .container #service-title hr {
     width: 70%;  
 }
 @media (min-width: 1199px) {#services .container #service-title hr {width: 33%;}}
-
 
 hr {  
     justify-content: center;
@@ -386,14 +364,11 @@ hr {
     border: #25e6c8;
     margin-bottom: 1.3rem;
 }
-
-
 #services .container .service-box h5 {
     font-family: Roboto Slab;
     font-size: 22px;
     font-weight: normal;
-    margin-bottom: 0rem;
-     
+    margin-bottom: 0rem;     
 }
 #services .container .service-box p {
     font-family: Roboto;
@@ -422,7 +397,6 @@ hr {
     border-width: 5px;
     border-color: #2ba8ec26;
     box-shadow: 0 0 0 7px #2ba8ec26;
-   
    
     border-radius: 50%;
     width: 80px;
