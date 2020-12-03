@@ -77,7 +77,9 @@ a:hover {
 #topmenu .container .socialmedia li {
     margin-left: 1.3rem;
 }
-
+#topmenu .container .menu ul li a:hover {
+    color: #25e6c8;
+}
 
 
 
@@ -119,9 +121,7 @@ a:hover {
 #mainmenu .container .menu ul li a {
     color: #363636;
 }
-#mainmenu .container .menu ul li a:hover {
-    color: #25e6c8;
-}
+
 #mainmenu .container .menu button {
     font-size: 2.0rem;
     padding: 0;
@@ -147,30 +147,32 @@ a:hover {
     justify-content: center;
     align-items: center;
     display: flex;
+    flex: 1;
 }
 
 #showcase .container .showcase-image .showimage{
     height: 200px;
 }
-@media (min-width: 768px) { #showcase .container .showcase-image .showimage{ height: 400px; margin: 0;} }
+@media (min-width: 768px) { #showcase .container .showcase-image .showimage{ height: 400px; padding-right: 2rem;} }
 
 #showcase .container .showcase-info {
-   
+    flex: 1;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-left: 1rem;  
-    text-align: center;
+    text-align: center;  
 }
-@media (min-width: 768px) {#showcase .container .showcase-info{padding-left: 2rem;} }
+@media (min-width: 768px) {#showcase .container .showcase-info{padding-left: 1.5rem; text-align: left;} }
 
 #showcase .container .showcase-info h1 {
     
     font-family: 'Roboto Slab', serif; 
-    font-size: 40px;
+    font-size: 32px;
     font-weight: lighter;          
-    margin-top: 0rem;
-   
+    margin-top: 0rem; 
 }
+@media (min-width: 768px) {#showcase .container .showcase-info h1{font-size: 40px;}}
+
 #showcase .container .showcase-info p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -208,7 +210,6 @@ a:hover {
 /*about-us*/
 #about-us {
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
 }
 #about-us .container {
     align-items: center;
@@ -221,9 +222,10 @@ a:hover {
     padding-bottom: 2rem;
     justify-content:center;
     justify-items: center;
-    padding-left: 1rem; 
     text-align: center;
+    flex: 1;
 }
+@media (min-width: 768px) {#about-us .container .about-us-info {text-align: left;}}
 #about-us .container .about-us-info h2 {
     justify-content: center;
     align-items: center;
@@ -244,13 +246,14 @@ a:hover {
     justify-content: space-between;
     align-items: flex-start;      
 }
-@media(min-width: 1199px) {.about-us-stats {justify-content: space-between; align-items: flex-start; padding-right: 10rem; }}
+
 
 #about-us .container .about-us-stats h3 {
     font-family: 'Roboto Slab', serif; 
     color: #2baaec;
     font-size: 30px;
-    margin-bottom: 0rem;   
+    margin-bottom: 0rem;
+    font-weight: normal;   
 }
 
 #about-us .container .about-us-stats p {
@@ -264,11 +267,12 @@ a:hover {
     justify-content: center;
     align-items: center;
     display: flex;  
+    flex: 1;  
 }
 #about-us .container .about-us-image .aboutimage{
     height: 200px;
 }
-@media (min-width: 768px) { #about-us .container .about-us-image .aboutimage{ height: 500px; padding-top: 3rem;} }
+@media (min-width: 768px) { #about-us .container .about-us-image .aboutimage{ height: 600px; padding-top: 2rem; padding-bottom: 0rem;} }
 
 
 
@@ -294,6 +298,7 @@ a:hover {
     justify-content: center;
     text-align: center;
     gap: 1rem;
+    
 }
 #services .container { 
     grid-template-columns:  1fr; 
@@ -386,6 +391,7 @@ hr {
     border-radius: 50%;
     width: 80px;
     height: 80px;
+        
 }
 #services .container .service-box .box:hover {
     display: flex;
