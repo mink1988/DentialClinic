@@ -117,11 +117,9 @@ a:hover {
 #mainmenu .container .menu ul li {
     margin-left: 1.3rem;
 }
-
 #mainmenu .container .menu ul li a {
     color: #363636;
 }
-
 #mainmenu .container .menu button {
     font-size: 2.0rem;
     padding: 0;
@@ -149,9 +147,9 @@ a:hover {
     display: flex;
     flex: 1;
 }
-
 #showcase .container .showcase-image .showimage{
     height: 200px;
+    
 }
 @media (min-width: 768px) { #showcase .container .showcase-image .showimage{ height: 400px; padding-right: 2rem;} }
 
@@ -164,8 +162,7 @@ a:hover {
 }
 @media (min-width: 768px) {#showcase .container .showcase-info{padding-left: 1.5rem; text-align: left;} }
 
-#showcase .container .showcase-info h1 {
-    
+#showcase .container .showcase-info h1 {   
     font-family: 'Roboto Slab', serif; 
     font-size: 32px;
     font-weight: lighter;          
@@ -187,8 +184,8 @@ a:hover {
 @media (min-width: 768px) {#showcase .container .showcase-about-our-clinic {display: block ;}}
 
 #showcase .container .showcase-btn {
-    height: 2rem;
-    width: 8rem;
+    height: 2.5rem;
+    width: 10rem;
       
     background-color: #25E6C8;
     color: #ffffff;
@@ -226,14 +223,17 @@ a:hover {
     flex: 1;
 }
 @media (min-width: 768px) {#about-us .container .about-us-info {text-align: left;}}
+
 #about-us .container .about-us-info h2 {
     justify-content: center;
     align-items: center;
     font-weight: normal;
     font-size: 32px;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;  
     
 }
+@media (min-width: 768px) {#about-us .container .about-us-info h2 {font-size: 40px; text-align: left;} }
+
 #about-us .container .about-us-info hr .hr-info{  
     width: 100%;
 }
@@ -246,8 +246,6 @@ a:hover {
     justify-content: space-between;
     align-items: flex-start;      
 }
-
-
 #about-us .container .about-us-stats h3 {
     font-family: 'Roboto Slab', serif; 
     color: #2baaec;
@@ -285,7 +283,8 @@ a:hover {
     padding-bottom: 1rem;
     padding-top: 3rem;
     padding-left: 2rem;
-    padding-right: 2rem;   
+    padding-right: 2rem;  
+    border-radius: 10px; 
 }
 #services {
     background: #f7f7f7;
@@ -297,8 +296,7 @@ a:hover {
     grid-template-columns: 1fr;
     justify-content: center;
     text-align: center;
-    gap: 1rem;
-    
+    gap: 1rem;    
 }
 #services .container { 
     grid-template-columns:  1fr; 
@@ -349,7 +347,6 @@ a:hover {
 #service-box-6 {
     grid-area: b6;
 }
-
 #services .container #service-title h4 {
     font-family: Roboto Slab;
     font-size: 32px;
@@ -390,24 +387,17 @@ hr {
       
     border-radius: 50%;
     width: 80px;
-    height: 80px;
-        
+    height: 80px;       
 }
-#services .container .service-box .box:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-      
+#services .container .service-box:hover {
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.16);
+}
+#services .container .service-box:hover >.box {   
     background-color: #2BAAEC;
-    border-style: solid;
-    border-width: 5px;
     border-color: #2ba8ec26;
-    box-shadow: 0 0 0 7px #2ba8ec26;
-   
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    box-shadow: 0 0 0 7px #2ba8ec26;  
 }
+
 #services .container .service-box .box-image {
     height: 40px;
 }
