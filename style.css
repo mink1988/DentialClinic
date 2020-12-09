@@ -186,6 +186,8 @@ a:hover {
 #showcase .container .showcase-btn {
     height: 2.5rem;
     width: 10rem;
+    font-family: 'Roboto', serif; 
+    font-weight: bold;
       
     background-color: #25E6C8;
     color: #ffffff;
@@ -230,7 +232,7 @@ a:hover {
     font-weight: normal;
     font-size: 32px;
     margin-bottom: 1rem;  
-    
+    font-family: 'Roboto Slab', serif; 
 }
 @media (min-width: 768px) {#about-us .container .about-us-info h2 {font-size: 40px; text-align: left;} }
 
@@ -348,7 +350,7 @@ a:hover {
     grid-area: b6;
 }
 #services .container #service-title h4 {
-    font-family: Roboto Slab;
+    font-family: 'Roboto Slab', serif; 
     font-size: 32px;
     font-weight: normal;    
     margin-bottom: 1rem;
@@ -367,13 +369,13 @@ hr {
     margin-bottom: 1.3rem;
 }
 #services .container .service-box h5 {
-    font-family: Roboto Slab;
+    font-family: 'Roboto Slab', serif; 
     font-size: 22px;
     font-weight: normal;
     margin-bottom: 0rem;     
 }
 #services .container .service-box p {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: normal;
 }
@@ -423,7 +425,7 @@ hr {
     display: flex;
     justify-content: center;   
     color: #FFFFFF;
-    font-family: Roboto Slab;
+    font-family: 'Roboto Slab', serif;
     margin-top: 0.5rem;
     padding-top: 1rem; 
 }
@@ -436,7 +438,7 @@ hr {
 #appointment .container .btn-book .book { 
     background-color: #FFFFFF;
     color: #2BAAEC;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     padding-top: 0.5rem;
     padding-left: 1.5rem;
@@ -480,7 +482,7 @@ hr {
 
 #footer .container .time {
     color: #2baaec;
-    font-family: Roboto Slab;
+    font-family: 'Roboto Slab', serif;
     display: flex;
     justify-content: center;  
 }
