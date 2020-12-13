@@ -149,9 +149,9 @@ a:hover {
 }
 #showcase .container .showcase-image .showimage{
     height: 200px;
-    
 }
 @media (min-width: 768px) { #showcase .container .showcase-image .showimage{ height: 400px; padding-right: 2rem;} }
+@media (min-width: 1200px) { #showcase .container .showcase-image .showimage{ height: 480px; padding-right: 2rem;} }
 
 #showcase .container .showcase-info {
     flex: 1;
@@ -159,6 +159,7 @@ a:hover {
     padding-bottom: 2rem;
     margin-left: 1rem;  
     text-align: center;  
+    
 }
 @media (min-width: 768px) {#showcase .container .showcase-info{padding-left: 1.5rem; text-align: left;} }
 
@@ -167,8 +168,10 @@ a:hover {
     font-size: 32px;
     font-weight: lighter;          
     margin-top: 0rem; 
+    line-height: normal;
 }
 @media (min-width: 768px) {#showcase .container .showcase-info h1{font-size: 40px;}}
+@media (min-width: 1200px) {#showcase .container .showcase-info h1{font-size: 50px;}}
 
 #showcase .container .showcase-info p {
     font-family: 'Roboto', sans-serif;
@@ -392,7 +395,7 @@ hr {
     height: 80px;       
 }
 #services .container .service-box:hover {
-    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.16);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.16);
 }
 #services .container .service-box:hover >.box {   
     background-color: #2BAAEC;
@@ -429,6 +432,8 @@ hr {
     margin-top: 0.5rem;
     padding-top: 1rem; 
 }
+@media (min-width: 768px) {#appointment .container .book-info {font-size: 20px;}}
+
 #appointment .container .btn-book {  
     display: flex;
     justify-content: center;
@@ -440,10 +445,10 @@ hr {
     color: #2BAAEC;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    padding-top: 0.5rem;
+    padding-top: 0.7rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.7rem;
     border-color: #FFFFFF;
     border-width: thin;
     border-radius: 8px; 
